@@ -7,7 +7,7 @@
 </head>
 <body style="font-family: Arial, sans-serif; text-align: center; padding: 20px;">
     <h1>Do What You Want But No Academic Cheating License (DWYWBAC)</h1>
-    <p><strong>Version 1.0 - February 2025</strong></p>
+    <p><strong>Version 1.0 - <span id="currentYear"></span></strong></p>
     <p>The <strong>DWYWBAC License</strong> is an open-source license that allows complete 
     freedom in using, modifying, and distributing code—except when doing so 
     would violate academic integrity policies.</p>
@@ -19,7 +19,13 @@
     <p>Use DWYWBAC in your projects and help spread ethical open-source software!</p>
 
     <footer>
-        <p>&copy; 2025 DWYWBAC License. All rights reserved.</p>
+        <p>&copy; <span id="currentYearFooter"></span> DWYWBAC License. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Get current year and insert into the document
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+        document.getElementById("currentYearFooter").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
